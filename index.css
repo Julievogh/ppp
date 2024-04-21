@@ -146,10 +146,25 @@ section .scroll_info {
 .looking_for p:first-child {
   line-height: 30px;
   margin: 800px;
+  max-width: 1200px;
+}
+
+.looking_for p {
+  line-height: 30px;
+  max-width: 800px;
 }
 
 .looking_for img {
-  margin-top: 50px;
+  margin-top: 120px;
+}
+
+.when_box {
+  margin-top: 2rem;
+  color: #7686d6;
+}
+
+.when_box p {
+  color: white;
 }
 
 .want_bring_container {
@@ -162,10 +177,6 @@ section .scroll_info {
 
 .want_bring_boxes {
   display: flex;
-}
-
-.want_bring_boxes li {
-  padding-bottom: 10px;
 }
 
 .want_box,
@@ -185,9 +196,11 @@ section .scroll_info {
 }
 
 .want_box li,
-.bring_box li {
+.bring_box li,
+.under_box li {
   margin-left: 20px;
-  line-height: 26px;
+  line-height: 20px;
+  padding-bottom: 10px;
 }
 
 .want_bring_undertext {
@@ -208,7 +221,8 @@ section .scroll_info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  margin: 30px 10px;
 }
 
 .tools_container h3 {
@@ -226,15 +240,24 @@ section .scroll_info {
 }
 
 .my_tools {
-  margin-left: 20px;
-  line-height: 26px;
   flex: 1;
-  max-width: 900px;
-  padding: 30px 20px;
+  max-width: 600px;
+  padding: 30px 50px;
   border-radius: 10px;
-  background-color: #b8808033;
+
   margin: 10px;
-  padding: 40px;
+  background-color: #b8808033;
+}
+
+.my_tools2 {
+  flex: 1;
+  min-width: 860px;
+  max-width: 800px;
+  padding: 30px 50px;
+  border-radius: 10px;
+
+  margin: 10px;
+  background-color: #b8808033;
 }
 
 .quote_container {
@@ -251,6 +274,26 @@ section .scroll_info {
 .quote_container img {
   width: 60px;
   margin: 4px 0 30px 0;
+}
+
+.four_pics_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+.four_pics_box img {
+  max-width: 30rem;
+}
+
+.note {
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #161d3f;
+  margin: 20px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -301,9 +344,19 @@ section .scroll_info {
     min-width: 200px;
   }
 
+  .my_tools2 {
+    flex: 1;
+    min-width: 400px;
+    max-width: 800px;
+    padding: 30px 50px;
+    border-radius: 10px;
+
+    margin: 10px;
+    background-color: #b8808033;
+  }
+
   .under_box {
     flex-direction: column;
-    min-width: 400px;
   }
 
   .want_bring_undertext {

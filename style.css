@@ -52,16 +52,28 @@ h2 {
 h3 {
   font-family: "gladiora light";
   font-size: 2.4rem;
+  margin-bottom: 10px;
 }
 
 h4 {
   font-family: "gladiora thinit";
   font-size: 1.8rem;
+
+  color: #7686d6;
 }
 
 h5 {
   font-family: "gladiora thinit";
   font-size: 1.4rem;
+  color: #2a3469;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #7686d6;
+  margin-bottom: 12px;
 }
 
 p {
