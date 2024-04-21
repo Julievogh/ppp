@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function showContactMe() {
-  t;
   const contactMe = document.querySelector(".contact_me_info");
   contactMe.classList.toggle("show");
 }
