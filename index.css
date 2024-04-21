@@ -1,0 +1,298 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+  top: 20px;
+  right: 50px;
+  z-index: 1000;
+}
+
+
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-size: 5rem;
+  color: #fff;
+  font-family: "gladiora reg";
+  font-size: 100px;
+  font-style: italic;
+  font-weight: 200;
+  line-height: normal;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgb(44, 45, 78);
+  text-shadow: 20px 20px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a.active {
+  z-index: 1000; 
+}
+
+.about_me_info,
+.contact_me_info {
+  position: relative; 
+  left: 0;
+  width: 100%;
+  display: none; 
+}
+
+.about_me_info {
+  margin: 10px 20px 30px 20px;
+}
+
+.about_me_info.show {
+  display: block; 
+}
+.about_me_content {
+  color: #e4e5ef;
+  text-align: left;
+}
+
+.contact_me_info.show {
+  display: block; 
+}
+
+.contact_me_content {
+  color: #d1d4e5;
+  text-align: left;
+  margin: 20px 20px 40px 20px;
+}
+
+
+.small-links {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+
+section .scroll {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+section .scroll_info {
+  position: relative;
+  width: 100%;
+  height: 6vh;
+  background: rgba(27, 23, 58, 0.5);
+  overflow: hidden;
+}
+
+.scroll_info p {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 1.2em;
+  line-height: 6vh;
+  animation: animate 20s linear infinite;
+}
+
+.scroll_info span {
+  color: rgb(120, 137, 233);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100vw); 
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.top_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 80%; 
+  margin: 0 auto; 
+}
+
+.profile_pic {
+  flex: 1; 
+  margin-right: 20px; 
+}
+
+.profile_pic img {
+  max-width: 90%;
+}
+
+.looking_for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 200px;
+}
+
+.looking_for h2 {
+  margin-bottom: 12px;
+}
+
+.looking_for h4 {
+  margin-bottom: 30px;
+}
+
+
+.looking_for p:first-child {
+  line-height: 30px;
+  margin: 800px;
+}
+
+.looking_for img {
+  margin-top: 50px;
+}
+
+.want_bring_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 100px;
+}
+
+.want_bring_boxes {
+  display: flex;
+}
+
+.want_bring_boxes li {
+  padding-bottom: 10px;
+}
+
+.want_box,
+.bring_box,
+.skills {
+  flex: 1; 
+  max-width: 300px; 
+  padding: 30px 20px; 
+  border-radius: 10px;
+  background-color: #d9d9d933;
+  margin: 10px; 
+}
+
+.want_box h5,
+.bring_box h5 {
+  margin-bottom: 20px;
+}
+
+.want_box li,
+.bring_box li {
+  margin-left: 20px;
+  line-height: 26px;
+}
+
+.want_bring_undertext {
+  text-align: center;
+  margin-top: 20px;
+  width: 600px;
+}
+
+.skills img {
+  width: 100%;
+}
+
+.under_box {
+  display: flex;
+  flex-direction: row;
+}
+
+.my_tools {
+  margin-left: 20px;
+  line-height: 26px;
+  flex: 1; 
+  max-width: 900px; 
+  padding: 30px 20px; 
+  border-radius: 10px;
+  background-color: #b8808033;
+  margin: 10px; 
+  padding: 40px;
+}
+
+.quote_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 80px auto; 
+
+  max-width: 40%;
+}
+
+.quote_container img {
+  width: 60px;
+  margin: 4px 0 30px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .top_container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .profile_pic {
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    position: static; 
+    margin-top: 10px; 
+    width: fit-content; 
+    margin-left: 40px;
+  }
+
+  .navbar a {
+    font-size: 2rem; 
+    margin-right: 300px; 
+  }
+
+  .about_me_info,
+  .contact_me_info {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    transform: none;
+  }
+
+  .looking_for {
+    margin: 40px 50px 20px 50px;
+  }
+
+  .want_bring_boxes {
+    flex-direction: column;
+  }
+
+  .want_box,
+  .bring_box,
+  .skills {
+    padding: 30px;
+    margin: 10px -120px;
+    max-width: 400px;
+    min-width: 200px;
+  }
+
+  .under_box {
+    flex-direction: column;
+    min-width: 400px;
+  }
+
+  .want_bring_undertext {
+    max-width: 400px;
+  }
+
+  .quote_container {
+    max-width: 400px;
+  }
+}
