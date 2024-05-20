@@ -109,6 +109,12 @@ footer {
   justify-content: center;
 }
 
+footer a {
+  color: #5a62a3;
+  font-weight: 200;
+  text-decoration: none;
+}
+
 .email_number,
 .footer_navbar {
   grid-column: 1 / span 3;
@@ -116,8 +122,8 @@ footer {
 }
 
 .email_number {
-  font-weight: 600;
-  color: #2a3469;
+  font-weight: 400;
+  color: #e0e1e9;
 }
 
 .footer_navbar {
@@ -125,15 +131,14 @@ footer {
 }
 
 .footer_navbar a {
-  font-weight: 600;
-  color: #b9bcd8;
-  font-weight: 400;
+  color: #5a62a3;
+  font-weight: 200;
   text-decoration: none;
 }
 
 .footer_navbar a:hover {
-  color: #7d809e;
-  font-weight: 600;
+  color: #e6e7ee;
+  font-weight: 200;
 }
 
 .printpdf {
